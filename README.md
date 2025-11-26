@@ -1,62 +1,85 @@
-1. Instalação
+📌 Simulação Espacial da Transmissão da Monkeypox com SEIR em Autômatos Celulares
 
-Para executar o projeto, é necessário ter Python 3.8+ instalado.
+Este projeto implementa um modelo SEIR usando Autômato Celular 2D para simular a transmissão espacial da Monkeypox.
+A população é distribuída em uma grade, com clusters sociais que aumentam a transmissibilidade em regiões específicas.
+
+O objetivo é permitir experimentos epidemiológicos simples, visualização de curvas S–E–I–R e análise da influência de aglomerações na propagação da doença.
+
+🛠️ 1. Instalação
+
+Clone o repositório e entre no diretório:
+
+git clone https://github.com/SEU_USUARIO/monkeypox-AC-SEIR.git
+cd monkeypox-AC-SEIR
+
+
+Crie um ambiente virtual (opcional, mas recomendado):
+
+python -m venv venv
+source venv/bin/activate       # Linux/Mac
+venv\Scripts\activate          # Windows
+
 
 Instale as dependências:
 
-pip install numpy matplotlib
+pip install -r requirements.txt
 
 
-Clone ou baixe o repositório e mantenha estes arquivos juntos na mesma pasta:
+Arquivo requirements.txt recomendado:
 
-config.py
-model.py
-main.py
+numpy
+matplotlib
 
-2. Como usar
-Executar a simulação
+▶️ 2. Como usar
 
-Basta rodar o arquivo:
+Execute a simulação com:
 
 python main.py
 
 
 Isso irá:
 
-Rodar a simulação SEIR em autômatos celulares 2D
+✔ Rodar o modelo SEIR em uma grade 2D
+✔ Gerar curvas S, E, I e R
+✔ Salvar automaticamente os gráficos em /output/
+✔ Mostrar o gráfico na tela
 
-Gerar os gráficos das curvas S, E, I e R
+Estrutura esperada:
 
-Salvar automaticamente os gráficos em /plots/
+├── main.py
 
-Exibir o resultado final da grade (heatmap opcional, se você habilitar depois)
+├── model.py
 
-Saída padrão gerada:
+├── config.py
 
-📁 plots/
+├── output/
+│   ├── curva_SEIR.png
+│   ├── heatmap_final.png
 
-curvas_seir.png — gráfico temporal S/E/I/R
+├── README.md
 
-heatmap_final.png — estado final da grade (opcional)
-
-evolucao_infectados.png — evolução isolada do número de infectados
-
-Você pode usar essas imagens diretamente no seu artigo ou GitHub.
-
-3. Requisitos
+📌 3. Requisitos
 
 Python 3.8+
-
-Bibliotecas Python:
 
 NumPy
 
 Matplotlib
 
-Instale com:
+Esses pacotes são usados para:
 
-<<<<<<< HEAD
-pip install numpy matplotlib
-=======
-pip install numpy matplotlib
->>>>>>> 04c76e9a2282417909aaec9b8f8d3a8e61db6c8f
+Representar a grade da população
+
+Processar a evolução temporal do autômato
+
+Gerar e salvar gráficos automaticamente
+
+📊 Exemplos de saídas
+🔹 Curva SEIR
+
+Mostra a evolução temporal dos estados Suscetível, Exposto, Infectado e Recuperado.
+
+🔹 Heatmap da grade final
+
+Visualiza a epidemia no espaço ao final da simulação.
+
