@@ -1,0 +1,17 @@
+GRID_SIZE = 100
+
+S = 0
+E = 1
+I = 2
+R = 3
+
+INITIAL_INFECTED = 5        
+
+P_INFECT = 0.15             
+P_EXPOSE_TO_INFECT = 0.20   
+P_RECOVER = 0.05            
+
+CLUSTER_RATIO = 0.30        
+CLUSTER_INTENSITY = 0.50    
+
+STEPS = 150
