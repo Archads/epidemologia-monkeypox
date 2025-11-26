@@ -1,11 +1,11 @@
-📌 Simulação Espacial da Transmissão da Monkeypox com SEIR em Autômatos Celulares
+# Simulação Espacial da Transmissão da Monkeypox com SEIR em Autômatos Celulares
 
 Este projeto implementa um modelo SEIR usando Autômato Celular 2D para simular a transmissão espacial da Monkeypox.
 A população é distribuída em uma grade, com clusters sociais que aumentam a transmissibilidade em regiões específicas.
 
 O objetivo é permitir experimentos epidemiológicos simples, visualização de curvas S–E–I–R e análise da influência de aglomerações na propagação da doença.
 
-🛠️ 1. Instalação
+## 🛠️ 1. Instalação
 
 Clone o repositório e entre no diretório:
 
@@ -30,7 +30,7 @@ Arquivo requirements.txt recomendado:
 numpy
 matplotlib
 
-▶️ 2. Como usar
+## ▶️ 2. Como usar
 
 Execute a simulação com:
 
@@ -59,7 +59,7 @@ Estrutura esperada:
 
 ├── README.md
 
-📌 3. Requisitos
+## 📌 3. Requisitos
 
 Python 3.8+
 
@@ -75,7 +75,7 @@ Processar a evolução temporal do autômato
 
 Gerar e salvar gráficos automaticamente
 
-📊 Exemplos de saídas
+## 📊 Exemplos de saídas
 🔹 Curva SEIR
 
 Mostra a evolução temporal dos estados Suscetível, Exposto, Infectado e Recuperado.
