@@ -40,9 +40,10 @@ python main.py
 Isso irá:
 
 ✔ Rodar o modelo SEIR em uma grade 2D
+
 ✔ Gerar curvas S, E, I e R
+
 ✔ Salvar automaticamente os gráficos em /output/
-✔ Mostrar o gráfico na tela
 
 Estrutura esperada:
 
