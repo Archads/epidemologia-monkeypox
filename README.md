@@ -55,4 +55,8 @@ Matplotlib
 
 Instale com:
 
+<<<<<<< HEAD
 pip install numpy matplotlib
+=======
+pip install numpy matplotlib
+>>>>>>> 04c76e9a2282417909aaec9b8f8d3a8e61db6c8f
